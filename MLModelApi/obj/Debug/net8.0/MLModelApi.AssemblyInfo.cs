@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MLModelApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0da58efe9be20dcb4818e3f0738c800de2b4d9c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2bd3a4135884b217e0d3a55e8a6106448a3f2199")]
 [assembly: System.Reflection.AssemblyProductAttribute("MLModelApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MLModelApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
