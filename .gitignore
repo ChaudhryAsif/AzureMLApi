@@ -1,0 +1,34 @@
+# Build Folders
+bin/
+obj/
+*.exe
+*.dll
+*.apphost.exe
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code / Rider
+.vscode/
+.idea/
+
+# Visual Studio
+.vs/
+
+# Auto-generated
+Generated_Code/
+
+# Logs and other junk
+*.log
+*.tlog
+*.cache
+*.pdb
+*.dbmdl
+*.bak
+
+# # ML.NET Models & Data (optional - if you recreate on build)
+# *.zip
+# *.csv
