@@ -8,6 +8,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton<MLModelService>();
 builder.Services.AddSingleton<SentimentService>();
+builder.Services.AddSingleton<VisionService>();
 
 var app = builder.Build();
 
