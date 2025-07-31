@@ -1,0 +1,12 @@
+# Build and VS files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.db
+*.db-shm
+*.db-wal
+*.cache
+*.log
+*.bin
