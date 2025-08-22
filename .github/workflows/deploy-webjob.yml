@@ -33,7 +33,7 @@ jobs:
           mkdir -p package/App_Data/jobs/continuous/StayAccessAutomate
           cp -r ./publish/* package/App_Data/jobs/continuous/StayAccessAutomate/
           echo "@echo off" > package/App_Data/jobs/continuous/StayAccessAutomate/run.cmd
-          echo "StayAccess.Automate.exe" >> package/App_Data/jobs/continuous/StayAccessAutomate/run.cmd
+          echo "dotnet MLModelApi.dll" >> package/App_Data/jobs/continuous/StayAccessAutomate/run.cmd
 
       - name: Zip package
         run: |
@@ -63,3 +63,4 @@ jobs:
           slot-name: 'production'
           publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: StayAccessWebJob.zip
+          deployment-method: zipDeploy   # ✅ force ZipDeploy
