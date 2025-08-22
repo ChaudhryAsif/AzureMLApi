@@ -19,13 +19,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./AzureMLApi/MLModelApi/MLModelApi.csproj
+        run: dotnet restore ./MLModelApi/MLModelApi.csproj
 
       - name: Build
-        run: dotnet build ./AzureMLApi/MLModelApi/MLModelApi.csproj --configuration Release --no-restore
+        run: dotnet build ./MLModelApi/MLModelApi.csproj --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./AzureMLApi/MLModelApi/MLModelApi.csproj -c Release -o ./publish
+        run: dotnet publish ./MLModelApi/MLModelApi.csproj -c Release -o ./publish
 
       # Prepare WebJob folder structure
       - name: Prepare WebJob package
