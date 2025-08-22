@@ -19,13 +19,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./StayAccess.Automate/StayAccess.Automate.csproj
+        run: dotnet restore ./AzureMLApi\MLModelApi\MLModelApi.csproj
 
       - name: Build
-        run: dotnet build ./StayAccess.Automate/StayAccess.Automate.csproj --configuration Release --no-restore
+        run: dotnet build ./AzureMLApi\MLModelApi\MLModelApi.csproj --configuration Release --no-restore
 
       - name: Publish
-        run: dotnet publish ./StayAccess.Automate/StayAccess.Automate.csproj -c Release -o ./publish
+        run: dotnet publish ./AzureMLApi\MLModelApi\MLModelApi.csproj -c Release -o ./publish
 
       # Prepare WebJob folder structure
       - name: Prepare WebJob package
